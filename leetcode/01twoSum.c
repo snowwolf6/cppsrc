@@ -13,6 +13,11 @@ int indexs[100000]={0};
 
 int* twoSum(int* nums, int numsSize, int target)
 {
+	/**
+	  *应考虑到原数组未排序，可能存在重复值，输出原始数组的索引
+	  *易错点：用指针访问数组时，不要直接把数组名指针++
+	  *否则再次使用那个指针访问时易造成越界未定义错误
+	  */
 	int i;
 	for(i=0;i<numsSize;i++)
 	{
