@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//qsort  is in stdlib.h
 // sort char arry, is same to the int arry
 int charcmp(const void *a,const void *b)
 {
